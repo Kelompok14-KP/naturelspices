@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerja Praktek</title>
+  <link rel="icon" href="LOGO2.PNG" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg bg-success fixed-top">
+    <div class="container">
+      <img width="210" height="115" src="logo.png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#product">PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#gallery">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").classList.remove("fade-out");
+        document.getElementById("navbar").classList.add("fade-in");
+      } else {
+        document.getElementById("navbar").classList.remove("fade-in");
+        document.getElementById("navbar").classList.add("fade-out");
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>  
+
+  <!-- jumbotron -->
+  <section id="home" class="jumbotron text-center" style="padding: 0;">
+    <img src="https://naturelspices.com/wp-content/uploads/2022/08/Slide1.jpg" alt="foto profil" style="width: 98vw; height: 98vh; object-fit: cover;">
+</section>
+
+  <!-- About -->
+  <section id="about" class="">
+    <div class="container">
+        <div class="row text-left">
+              <div class="col-md-6" > <!-- Mengubah ukuran kolom untuk gambar -->
+                <img src="https://naturelspices.com/wp-content/uploads/2022/08/spices-side.jpg" alt="ABOUT US" style="width: 100%; height: auto;">
+            </div>
+                <div class="col-md-6 animate__animated animate__fadeIn" >
+                    <p class="judul">About Us</p>
+                    <p class="sub">FINEST QUALITY</p>
+                    <p class="teks animate__animated animate__fadeInUp">Established in 2019, Naturel Spices was born from our Founders’ passion to raise awareness and promote Indonesian spices throughout the world. 
+                    <br>Indonesia is a country consists of many different culture and is well known for its diverse spices.
+                    <br><br>Spices are the core ingredients for every flavour. Naturel Spices aim to provide the best quality of spices around the globe. 
+                    With careful and specific quality control of our products, we ensure safe and high quality spices. Our spices are cultivated from many different places all around Indonesia, 
+                    while working closely with our local famers and always take into account their wellness and wellbeing.
+                    <br><br>
+                    We thank each and every Naturel’s stakeholders for their continuous support as Naturel strive to always produce greater spices and ensure best services.
+                    </p>
+                </div>
+                <!--core--->
+                <class="col-md-7">
+                  <div class="values">
+                    <p class="core">CORE VALUES</p>
+                  </div>
+                  <div class="row justify-content-center" style="width: 70rem;">
+    <!-- Card kiri -->
+    <div class="col-md-6 mb-5 d-flex justify-content-center">
+        <div class="card" style="border: none;">
+            <div style="text-align: center;">
+                <img src="inovation.PNG" class="card-img-top" alt="inovasi" style="width: 90px;"> <!-- Mengatur lebar gambar -->
+            </div>
+            <div class="card-body">
+                <div class="innovation" style="max-width: 300px; max-height: 200px;">
+                    <p class="card-text text-center">INNOVATION</p>
+                    <p class="teksinno" style="text-align: center;">We’re keep on adapting, innovating and developing product that suitable to our customers</p>
+                </div>                              
+            </div>                      
+        </div>
+    </div>
+    <div class="col-md-6 mb-5 d-flex justify-content-center" >
+        <div class="card" style="border: none;">
+            <div style="text-align: center;">
+                <img src="integrity.PNG" class="card-img-top" alt="inovasi" style="width: 90px;"> <!-- Mengatur lebar gambar -->
+            </div>
+            <div class="card-body">
+                <div class="innovation" style="max-width: 300px; max-height: 200px;">
+                    <p class="card-text text-center">INTEGRITY</p>
+                    <p class="tekskomu" style="text-align: center;">We build trust through responsible actions and honest relationships with our customers</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center" style="width: 70rem;">
+    <!-- Card kanan -->
+    <div class="col-md-6 mb-5 d-flex justify-content-center">
+        <div class="card" style="border: none;">
+            <div style="text-align: center;">
+                <img src="komunikasi.PNG" class="card-img-top" alt="inovasi" style="width: 90px;"> <!-- Mengatur lebar gambar -->
+            </div>
+            <div class="card-body">
+                <div class="innovation" style="max-width: 300px; max-height: 200px;">
+                    <p class="card-text text-center">COMMUNICATION</p>
+                    <p class="teksinno" style="text-align: center;">We believe with an excellent two-way communication we can deliver the best service to our customers</p>
+                </div>                              
+            </div>                      
+        </div>
+    </div>
+    <div class="col-md-6 mb-5 d-flex justify-content-center">
+        <div class="card" style="border: none;">
+            <div style="text-align: center;">
+                <img src="quality.PNG" class="card-img-top" alt="inovasi" style="width: 90px;"> <!-- Mengatur lebar gambar -->
+            </div>
+            <div class="card-body">
+                <div class="innovation" style="max-width: 300px; max-height: 200px;">
+                    <p class="card-text text-center">QUALITY</p>
+                    <p class="tekskomu" style="text-align: center;">We promise to create a unique experience and deliver the best quality product to our customers</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>                    
+            
+<div class="col-md-7">
+  <div class="flex-container">
+      <div class="vision-mission animate__animated animate__fadeIn">
+          <p class="core">VISION & MISSION</p>
+          <!--mission-->
+          <div class="vision">
+              <p class="core animate__animated animate__fadeInUp">VISION</p>
+          </div>
+          <ul class="bullet-list">
+              <li class="vision2 animate__animated animate__fadeInUp">Becoming the largest Indonesian company to promote the sale of Indonesian spices by <br> empowering our local farmers</li>
+          </ul>
+          <!--mision-->
+          <div class="mision">
+              <p class="core animate__animated animate__fadeInUp">MISSION</p>
+          </div>
+          <ul class="bullet-list">
+              <li class="vision2 animate__animated animate__fadeInUp">Empowering our local farmers to achieve the highest international standard for Indonesian Spices</li>
+              <li class="vision2 animate__animated animate__fadeInUp">Promoting Indonesian spices proudly as a part of the well-known Nusantara resource</li>
+              <li class="vision2 animate__animated animate__fadeInUp">Creating a sustainable business ecosystem for the welfare of local Indonesian farmers</li>
+          </ul>
+      </div>
+      <div>
+          <a href="https://naturelspices.com/wp-content/uploads/2022/08/trio-2.png" target="_blank">
+            <div class="animate__animated animate__fadeInUp"> 
+              <img src="https://naturelspices.com/wp-content/uploads/2022/08/trio-2.png" alt="Flex Image" width="400px" height="400px">
+            </div>
+              
+          </a>
+      </div>
+  </div>
+</div>             
+          </div>
+  </section>
+
+  <!-- Poduct -->
+  <section id="product">
+    <div class="container">
+      <div class="row">       
+          <div class="product">
+            <p>Products</p>
+            <p class="spesialis animate__animated animate__fadeInUp">Our Speciality</p>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-5 animate__animated animate__fadeInUp">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/Cinnamon.jpg" class="card-img-top" alt="product1">
+            <div class="card-body">
+              <p class="card-text ">Cassia Cinnamon <br> Kayu Manis</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5 animate__animated animate__fadeInUp">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/Nutmeg.jpg" class="card-img-top" alt="product2">
+            <div class="card-body">
+              <p class="card-text">Nutmeg <br> Pala</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5 animate__animated animate__fadeInUp">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/Cloves.jpg" class="card-img-top" alt="product3">
+            <div class="card-body">
+              <p class="card-text">Cloves <br> Cengkeh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row">       
+          <div class="gallery">
+            <p>Collections</p>
+            <p class="spesialis">Our Gallery</p>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/1-150x150.jpg" class="card-img-top" alt="product1">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/2-150x150.jpg" class="card-img-top" alt="product2">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/3-150x150.jpg" class="card-img-top" alt="product3">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/4-150x150.jpg" class="card-img-top" alt="product4">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/5-150x150.jpg" class="card-img-top" alt="product5">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/6-150x150.jpg" class="card-img-top" alt="product6">
+          </div>
+        </div>
+      </div>
+      <!--baris ke dua-->
+      <div class="row justify-content-center">
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/7-150x150.jpg" class="card-img-top" alt="product7">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/8-150x150.jpg" class="card-img-top" alt="product8">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/9-150x150.jpg" class="card-img-top" alt="product9">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/10-150x150.jpg" class="card-img-top" alt="product10">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/11-150x150.jpg" class="card-img-top" alt="product11">
+          </div>
+        </div>
+        <div class="col-md-2 mb-5">
+          <div class="card" style="border: none;">
+            <img src="https://naturelspices.com/wp-content/uploads/2022/08/12-150x150.jpg" class="card-img-top" alt="product12">
+          </div>
+        </div>
+      </div>
+      <p class="galery-text animate__animated animate__fadeIn">"The secret of happiness is variety, but the secret of variety, like the secret of all spices, is knowing when to use it." - Daniel Gilbert</p>
+    </div>
+  </section>
+
+  <!--contact us-->
+  <section id="contact" class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="flex-container2">
+                <div class="col-md-3 mb-5">
+                    <div class="card" style="border: none;">
+                        <img src="contact.PNG" class="card-img-top" alt="logocontact" style="width: 13rem;">
+                    </div>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <div class="address">
+                        <div class="card" style="border: none; margin-right: 20px;" >
+                            <img src="address.PNG" class="card-img-top" alt="address" style="width: 18rem;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <div class="contact2">
+                        <div class="card" style="border: none;">
+                            <img src="contactus.PNG" class="card-img-top" alt="contactus" style="width: 15rem;">
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-3 mb-5">
+                    <div class="map">
+                        <iframe src="https://maps.google.com/maps?q=Arcade%20Business%20Center%20PIK&#038;t=m&#038;z=14&#038;output=embed&#038;iwloc=near" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- footer -->
+  <footer class="pb-2 pt-3 text-white text-center bg-secondary">
+    <p>created with <i class="bi bi-suit-heart-fill"></i> by <a href="https://www.instagram.com/unpamofficial/" target="_blank" class="text-white fw-bold">Kerja Praktek Kelompok 14</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
